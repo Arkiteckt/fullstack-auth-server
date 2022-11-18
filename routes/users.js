@@ -1,3 +1,4 @@
+// https://github.com/WDI-203/A--Fullstack-Auth-Intro/blob/main/README.md
 var express = require('express');
 const { uuid } = require('uuidv4');
 var router = express.Router();
@@ -69,6 +70,7 @@ const userData = {
 	userId: user.id, 
 	scope: userType,
 };
+})
 
 router.post("/message", async (req, res) => {
   router.post("/login", async (req, res) => {
@@ -100,7 +102,5 @@ if (userData && userData.scope === "admin") {
 	});
 }
 
-
+})
 module.exports = router;
-
-  
